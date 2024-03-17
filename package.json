@@ -1,0 +1,17 @@
+{
+    "name": "vite-typescript-starter",
+    "type": "module",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "remote": "pnpm build:remote && pnpm preview:remote",
+        "build:remote": "pnpm --filter remote-ui build",
+        "preview:remote": "pnpm --filter remote-ui preview",
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix"
+    },
+    "devDependencies": {
+        "typescript": "^5.2.2",
+        "vite": "^5.0.4"
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "jsx": "preserve",
+        "lib": [
+            "esnext",
+            "dom"
+        ],
+        "useDefineForClassFields": true,
+        "baseUrl": "./",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "paths": {
+            "@/*": [
+                "./src/*"
+            ],
+            "@@/*": [
+                "./src/assets/*"
+            ]
+        },
+        "resolveJsonModule": true,
+        "types": [
+            "vite/client"
+        ],
+        "strict": true,
+        "noUnusedLocals": true,
+        "sourceMap": true,
+        "esModuleInterop": true
+    },
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.d.ts",
+        "src/**/*.tsx",
+        "src/**/*.vue",
+        "src/**/*.js",
+        "*.json"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist",
+        "*.md"
+    ]
+}
